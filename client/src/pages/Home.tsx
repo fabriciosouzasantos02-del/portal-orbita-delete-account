@@ -681,7 +681,7 @@ export default function Home() {
               </a>
               <span>·</span>
               <a
-                href="https://portalorbit.vercel.app"
+                href="https://portal-orbita.blogspot.com/2026/08/privacy-policy.html"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-slate-400 transition-colors flex items-center gap-1"
@@ -691,7 +691,7 @@ export default function Home() {
               </a>
               <span>·</span>
               <a
-                href="https://portalorbit.vercel.app"
+                href="https://portal-orbita.blogspot.com/2026/08/portal-terms-of-use.html"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-slate-400 transition-colors"

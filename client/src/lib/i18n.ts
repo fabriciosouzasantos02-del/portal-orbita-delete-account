@@ -119,7 +119,7 @@ const translations: Record<SupportedLocale, Translations> = {
       "Histórico de consultas e leituras de tarô",
       "Preferências e configurações do aplicativo",
       "Dados de uso e atividade dentro do app",
-      "Assinaturas e histórico de pagamentos (dados de pagamento gerenciados pelo Google Play)",
+      "Assinaturas e histórico de pagamentos (dados de pagamento gerenciados pelo Stripe)",
     ],
     retainedDataTitle: "Dados Mantidos Temporariamente",
     retainedDataItems: [
@@ -165,7 +165,7 @@ const translations: Record<SupportedLocale, Translations> = {
       "A exclusão da conta é permanente e não pode ser desfeita. Antes de prosseguir, considere:",
     warningItems: [
       "Todos os seus dados astrológicos e mapas serão perdidos permanentemente",
-      "Assinaturas ativas devem ser canceladas separadamente pelo Google Play",
+      "Assinaturas ativas devem ser canceladas separadamente pelo Stripe",
       "Não será possível recuperar o histórico de consultas e leituras",
       "Uma nova conta com o mesmo e-mail poderá ser criada, mas sem os dados anteriores",
     ],
@@ -208,7 +208,7 @@ const translations: Record<SupportedLocale, Translations> = {
       "Query history and tarot readings",
       "App preferences and settings",
       "Usage data and activity within the app",
-      "Subscriptions and payment history (payment data managed by Google Play)",
+      "Subscriptions and payment history (payment data managed by Stripe)",
     ],
     retainedDataTitle: "Temporarily Retained Data",
     retainedDataItems: [
@@ -254,7 +254,7 @@ const translations: Record<SupportedLocale, Translations> = {
       "Account deletion is permanent and cannot be undone. Before proceeding, consider:",
     warningItems: [
       "All your astrological data and charts will be permanently lost",
-      "Active subscriptions must be cancelled separately through Google Play",
+      "Active subscriptions must be cancelled separately through Stripe",
       "It will not be possible to recover your query and reading history",
       "A new account with the same email can be created, but without previous data",
     ],
@@ -298,7 +298,7 @@ const translations: Record<SupportedLocale, Translations> = {
       "Historial de consultas y lecturas de tarot",
       "Preferencias y configuraciones de la aplicación",
       "Datos de uso y actividad dentro de la app",
-      "Suscripciones e historial de pagos (datos de pago gestionados por Google Play)",
+      "Suscripciones e historial de pagos (datos de pago gestionados por Stripe)",
     ],
     retainedDataTitle: "Datos Conservados Temporalmente",
     retainedDataItems: [
@@ -344,7 +344,7 @@ const translations: Record<SupportedLocale, Translations> = {
       "La eliminación de la cuenta es permanente y no se puede deshacer. Antes de continuar, considera:",
     warningItems: [
       "Todos tus datos astrológicos y cartas se perderán permanentemente",
-      "Las suscripciones activas deben cancelarse por separado a través de Google Play",
+      "Las suscripciones activas deben cancelarse por separado a través de Stripe",
       "No será posible recuperar el historial de consultas y lecturas",
       "Se puede crear una nueva cuenta con el mismo correo, pero sin los datos anteriores",
     ],
@@ -388,7 +388,7 @@ const translations: Record<SupportedLocale, Translations> = {
       "Historique des consultations et lectures de tarot",
       "Préférences et paramètres de l'application",
       "Données d'utilisation et activité dans l'app",
-      "Abonnements et historique des paiements (données de paiement gérées par Google Play)",
+      "Abonnements et historique des paiements (données de paiement gérées par Stripe)",
     ],
     retainedDataTitle: "Données Conservées Temporairement",
     retainedDataItems: [
@@ -434,7 +434,7 @@ const translations: Record<SupportedLocale, Translations> = {
       "La suppression du compte est permanente et ne peut pas être annulée. Avant de continuer, considérez :",
     warningItems: [
       "Toutes vos données astrologiques et thèmes seront définitivement perdus",
-      "Les abonnements actifs doivent être annulés séparément via Google Play",
+      "Les abonnements actifs doivent être annulés séparément via Stripe",
       "Il ne sera pas possible de récupérer l'historique des consultations et lectures",
       "Un nouveau compte avec le même e-mail peut être créé, mais sans les données précédentes",
     ],
@@ -478,7 +478,7 @@ const translations: Record<SupportedLocale, Translations> = {
       "Anfrageverlauf und Tarot-Lesungen",
       "App-Präferenzen und Einstellungen",
       "Nutzungsdaten und Aktivitäten in der App",
-      "Abonnements und Zahlungshistorie (Zahlungsdaten von Google Play verwaltet)",
+      "Abonnements und Zahlungshistorie (Zahlungsdaten von Stripe verwaltet)",
     ],
     retainedDataTitle: "Vorübergehend Aufbewahrte Daten",
     retainedDataItems: [
@@ -524,7 +524,7 @@ const translations: Record<SupportedLocale, Translations> = {
       "Die Kontolöschung ist dauerhaft und kann nicht rückgängig gemacht werden. Bevor Sie fortfahren, bedenken Sie:",
     warningItems: [
       "Alle Ihre astrologischen Daten und Horoskope gehen dauerhaft verloren",
-      "Aktive Abonnements müssen separat über Google Play gekündigt werden",
+      "Aktive Abonnements müssen separat über Stripe gekündigt werden",
       "Es wird nicht möglich sein, den Anfrage- und Leseverlauf wiederherzustellen",
       "Ein neues Konto mit derselben E-Mail kann erstellt werden, jedoch ohne die vorherigen Daten",
     ],
@@ -568,7 +568,7 @@ const translations: Record<SupportedLocale, Translations> = {
       "Cronologia delle consultazioni e letture dei tarocchi",
       "Preferenze e impostazioni dell'app",
       "Dati di utilizzo e attività nell'app",
-      "Abbonamenti e cronologia dei pagamenti (dati di pagamento gestiti da Google Play)",
+      "Abbonamenti e cronologia dei pagamenti (dati di pagamento gestiti da Stripe)",
     ],
     retainedDataTitle: "Dati Conservati Temporaneamente",
     retainedDataItems: [
@@ -614,7 +614,7 @@ const translations: Record<SupportedLocale, Translations> = {
       "L'eliminazione dell'account è permanente e non può essere annullata. Prima di procedere, considera:",
     warningItems: [
       "Tutti i tuoi dati astrologici e temi saranno persi definitivamente",
-      "Gli abbonamenti attivi devono essere cancellati separatamente tramite Google Play",
+      "Gli abbonamenti attivi devono essere cancellati separatamente tramite Stripe",
       "Non sarà possibile recuperare la cronologia delle consultazioni e letture",
       "Un nuovo account con la stessa e-mail può essere creato, ma senza i dati precedenti",
     ],
@@ -656,7 +656,7 @@ const translations: Record<SupportedLocale, Translations> = {
       "相談履歴とタロット読み",
       "アプリの設定と好み",
       "アプリ内の使用データとアクティビティ",
-      "サブスクリプションと支払い履歴（支払いデータはGoogle Playが管理）",
+      "サブスクリプションと支払い履歴（支払いデータはStripeが管理）",
     ],
     retainedDataTitle: "一時的に保持されるデータ",
     retainedDataItems: [
@@ -702,7 +702,7 @@ const translations: Record<SupportedLocale, Translations> = {
       "アカウントの削除は永久的で元に戻せません。続行する前に考慮してください：",
     warningItems: [
       "すべての占星術データとチャートが永久に失われます",
-      "有効なサブスクリプションはGoogle Playから別途キャンセルする必要があります",
+      "有効なサブスクリプションはStripeから別途キャンセルする必要があります",
       "相談と読みの履歴を復元することはできません",
       "同じメールで新しいアカウントを作成できますが、以前のデータはありません",
     ],
@@ -744,7 +744,7 @@ const translations: Record<SupportedLocale, Translations> = {
       "상담 기록 및 타로 리딩",
       "앱 환경 설정 및 설정",
       "앱 내 사용 데이터 및 활동",
-      "구독 및 결제 기록 (결제 데이터는 Google Play에서 관리)",
+      "구독 및 결제 기록 (결제 데이터는 Stripe에서 관리)",
     ],
     retainedDataTitle: "일시적으로 보관되는 데이터",
     retainedDataItems: [
@@ -790,7 +790,7 @@ const translations: Record<SupportedLocale, Translations> = {
       "계정 삭제는 영구적이며 취소할 수 없습니다. 계속하기 전에 고려하세요:",
     warningItems: [
       "모든 점성술 데이터와 차트가 영구적으로 손실됩니다",
-      "활성 구독은 Google Play를 통해 별도로 취소해야 합니다",
+      "활성 구독은 Stripe를 통해 별도로 취소해야 합니다",
       "상담 및 리딩 기록을 복구하는 것은 불가능합니다",
       "동일한 이메일로 새 계정을 만들 수 있지만 이전 데이터는 없습니다",
     ],
@@ -826,7 +826,7 @@ const translations: Record<SupportedLocale, Translations> = {
       "咨询历史和塔罗牌解读",
       "应用程序偏好和设置",
       "应用内使用数据和活动",
-      "订阅和付款历史（付款数据由 Google Play 管理）",
+      "订阅和付款历史（付款数据由 Stripe 管理）",
     ],
     retainedDataTitle: "临时保留的数据",
     retainedDataItems: [
@@ -869,7 +869,7 @@ const translations: Record<SupportedLocale, Translations> = {
     warningDesc: "账户删除是永久性的，无法撤销。在继续之前，请考虑：",
     warningItems: [
       "您所有的占星数据和星盘将永久丢失",
-      "活跃订阅必须通过 Google Play 单独取消",
+      "活跃订阅必须通过 Stripe 单独取消",
       "将无法恢复咨询和解读历史",
       "可以使用相同的电子邮件创建新账户，但没有之前的数据",
     ],
@@ -911,7 +911,7 @@ const translations: Record<SupportedLocale, Translations> = {
       "سجل الاستشارات وقراءات التاروت",
       "تفضيلات وإعدادات التطبيق",
       "بيانات الاستخدام والنشاط داخل التطبيق",
-      "الاشتراكات وسجل المدفوعات (بيانات الدفع تدار بواسطة Google Play)",
+      "الاشتراكات وسجل المدفوعات (بيانات الدفع تدار بواسطة Stripe)",
     ],
     retainedDataTitle: "البيانات المحتفظ بها مؤقتاً",
     retainedDataItems: [
@@ -957,7 +957,7 @@ const translations: Record<SupportedLocale, Translations> = {
       "حذف الحساب دائم ولا يمكن التراجع عنه. قبل المتابعة، ضع في اعتبارك:",
     warningItems: [
       "ستُفقد جميع بياناتك الفلكية وخرائطك نهائياً",
-      "يجب إلغاء الاشتراكات النشطة بشكل منفصل عبر Google Play",
+      "يجب إلغاء الاشتراكات النشطة بشكل منفصل عبر Stripe",
       "لن يكون من الممكن استرداد سجل الاستشارات والقراءات",
       "يمكن إنشاء حساب جديد بنفس البريد الإلكتروني، ولكن بدون البيانات السابقة",
     ],
@@ -1000,7 +1000,7 @@ const translations: Record<SupportedLocale, Translations> = {
       "История запросов и чтений таро",
       "Настройки и предпочтения приложения",
       "Данные об использовании и активности в приложении",
-      "Подписки и история платежей (данные о платежах управляются Google Play)",
+      "Подписки и история платежей (данные о платежах управляются Stripe)",
     ],
     retainedDataTitle: "Временно сохраняемые данные",
     retainedDataItems: [
@@ -1046,7 +1046,7 @@ const translations: Record<SupportedLocale, Translations> = {
       "Удаление аккаунта является постоянным и не может быть отменено. Прежде чем продолжить, учтите:",
     warningItems: [
       "Все ваши астрологические данные и карты будут безвозвратно утеряны",
-      "Активные подписки необходимо отменить отдельно через Google Play",
+      "Активные подписки необходимо отменить отдельно через Stripe",
       "Восстановить историю запросов и чтений будет невозможно",
       "Новый аккаунт с той же электронной почтой можно создать, но без предыдущих данных",
     ],
@@ -1088,7 +1088,7 @@ const translations: Record<SupportedLocale, Translations> = {
       "परामर्श इतिहास और टैरो रीडिंग",
       "ऐप प्राथमिकताएं और सेटिंग्स",
       "ऐप में उपयोग डेटा और गतिविधि",
-      "सदस्यता और भुगतान इतिहास (भुगतान डेटा Google Play द्वारा प्रबंधित)",
+      "सदस्यता और भुगतान इतिहास (भुगतान डेटा Stripe द्वारा प्रबंधित)",
     ],
     retainedDataTitle: "अस्थायी रूप से रखा गया डेटा",
     retainedDataItems: [
@@ -1134,7 +1134,7 @@ const translations: Record<SupportedLocale, Translations> = {
       "खाता हटाना स्थायी है और इसे पूर्ववत नहीं किया जा सकता। आगे बढ़ने से पहले विचार करें:",
     warningItems: [
       "आपका सारा ज्योतिषीय डेटा और चार्ट स्थायी रूप से खो जाएगा",
-      "सक्रिय सदस्यता को Google Play के माध्यम से अलग से रद्द किया जाना चाहिए",
+      "सक्रिय सदस्यता को Stripe के माध्यम से अलग से रद्द किया जाना चाहिए",
       "परामर्श और रीडिंग इतिहास को पुनर्प्राप्त करना संभव नहीं होगा",
       "उसी ईमेल से एक नया खाता बनाया जा सकता है, लेकिन पिछले डेटा के बिना",
     ],
