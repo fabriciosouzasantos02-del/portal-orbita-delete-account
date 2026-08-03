@@ -1,0 +1,43 @@
+{
+  "build_command": "pnpm run build",
+  "capabilities": [
+    "db",
+    "server",
+    "user"
+  ],
+  "dev_command": "pnpm run dev",
+  "env_vars": {
+    "DATABASE_URL": "mysql://zYzoNFFCZwgkaDQ.root:9jIQ1oZJ9cCNgNI023oe@gateway05.us-east-1.prod.aws.tidbcloud.com:4000/LxSNG99cCeyh6KQoEjyGaF?ssl={\"rejectUnauthorized\":true}",
+    "DRIZZLE_DATABASE_URL": "mysql://zYzoNFFCZwgkaDQ.root:9jIQ1oZJ9cCNgNI023oe@gateway05.us-east-1.prod.aws.tidbcloud.com:4000/LxSNG99cCeyh6KQoEjyGaF?ssl={\"rejectUnauthorized\":true}",
+    "MANUS_WEBDEV_PROJECT_ID": "LxSNG99cCeyh6KQoEjyGaF"
+  },
+  "experiments": null,
+  "git_remote": {
+    "repo_url": "https://7f0548f6b28a1758d9bf7be630d36cb4.artifacts.cloudflare.net/git/prod/LxSNG99cCeyh6KQoEjyGaF.git",
+    "expiration": "2026-08-04T01:48:37.433Z",
+    "token": "art_v1_48133c4ea881745538b9b52a864d4b53a2e13b7a?expires=1785808117",
+    "backend": "GIT_BACKEND_ARTIFACTS"
+  },
+  "name": "portal-orbita-delete-account",
+  "path": "/home/ubuntu/portal-orbita-delete-account",
+  "port": 3000,
+  "secrets": {
+    "BUILT_IN_FORGE_API_KEY": "iJcR5bfHVQQvkNfcFaewqi",
+    "BUILT_IN_FORGE_API_URL": "https://forge.manus.ai",
+    "JWT_SECRET": "ADnV9VemujuUKdiwCXFiMq",
+    "OAUTH_SERVER_URL": "https://api.manus.im",
+    "OWNER_NAME": "wiz.trapstar77",
+    "OWNER_OPEN_ID": "mVNidSmawhtxFttA82iBDA",
+    "RESEND_API_KEY": "re_Xxs73cL2_L5B1MWF6TDJwRmb3wUzZDKML",
+    "VITE_ANALYTICS_ENDPOINT": "https://manus-analytics.com",
+    "VITE_ANALYTICS_WEBSITE_ID": "1103005e-d9e1-4002-9172-537a3a0a8e62",
+    "VITE_APP_ID": "LxSNG99cCeyh6KQoEjyGaF",
+    "VITE_APP_LOGO": "https://files.manuscdn.com/user_upload_by_module/web_dev_logo/310519663867760183/koGSctJIaWamefNe.png",
+    "VITE_APP_TITLE": "Portal Orbita - Delete Account",
+    "VITE_FRONTEND_FORGE_API_KEY": "D4aZ5qasPBUrjfiYj4m7yx",
+    "VITE_FRONTEND_FORGE_API_URL": "https://forge.manus.ai",
+    "VITE_OAUTH_PORTAL_URL": "https://manus.im"
+  },
+  "template_id": "web-static",
+  "test_command": "pnpm test"
+}
