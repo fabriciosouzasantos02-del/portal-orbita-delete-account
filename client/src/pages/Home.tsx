@@ -1,8 +1,9 @@
 // Portal Orbita — Delete Account Page
 // Design: Dark cosmic theme matching Portal Orbita brand identity
-// Features: i18n auto-detection, Google Play compliant, mailto form submission
+// Features: i18n auto-detection, Google Play compliant, API email submission via Resend
 
 import { useState, useEffect, useRef } from "react";
+import { useAuth } from "@/_core/hooks/useAuth";
 import { getTranslations, getLocale, isRTL } from "@/lib/i18n";
 import type { Translations } from "@/lib/i18n";
 import { motion, AnimatePresence } from "framer-motion";
@@ -106,6 +107,13 @@ function StepCard({
 
 // ─── Main page ─────────────────────────────────────────────────────────────
 export default function Home() {
+  // The useAuth hook provides authentication state.
+  // To implement login/logout, call logout(), or start login from an event
+  // handler: onClick={() => startLogin()} (imported from "@/const"). Never call
+  // startLogin() during render (no href={startLogin()}) — it mints a one-time
+  // nonce cookie and must run only at the moment of navigation.
+  let { user, loading, error, isAuthenticated, logout } = useAuth();
+
   const [t, setT] = useState<Translations>(getTranslations());
   const [locale, setLocale] = useState(getLocale());
   const [rtl, setRtl] = useState(false);
@@ -142,40 +150,37 @@ export default function Home() {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!validate()) return;
 
     setStatus("submitting");
 
-    const reasonLabel =
-      t.formReasonOptions.find((o) => o.value === reason)?.label || reason;
-
-    const subject = encodeURIComponent(
-      `[${t.appName}] Account Deletion Request - ${email}`
-    );
-    const body = encodeURIComponent(
-      `Account Deletion Request\n` +
-        `========================\n\n` +
-        `App: ${t.appName}\n` +
-        `Name: ${name}\n` +
-        `Email: ${email}\n` +
-        `Reason: ${reasonLabel}\n\n` +
-        `The user has confirmed they understand this action is irreversible.\n\n` +
-        `---\n` +
-        `Submitted via: ${window.location.href}\n` +
-        `Date: ${new Date().toISOString()}\n` +
-        `Language: ${locale}`
-    );
-
-    const mailtoLink = `mailto:unterstutzung.service@gmail.com?subject=${subject}&body=${body}`;
-
     try {
-      window.location.href = mailtoLink;
-      // Show success after a short delay to let the mail client open
-      setTimeout(() => {
+      const response = await fetch("/api/enviar", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: name.trim(),
+          email: email.trim(),
+          reason,
+          language: locale,
+          userAgent: navigator.userAgent,
+          submittedUrl: window.location.href,
+          submittedAt: new Date().toISOString(),
+          confirmed,
+        }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok && data.success) {
         setStatus("success");
-      }, 800);
+      } else {
+        setStatus("error");
+      }
     } catch {
       setStatus("error");
     }
