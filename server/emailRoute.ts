@@ -124,7 +124,7 @@ User Agent: ${userAgent}
       `.trim();
 
       const resendPayload = {
-        from: "Portal Orbita <noreply@portalorbita.com>",
+        from: "Portal Orbita <onboarding@resend.dev>",
         to: [SUPPORT_EMAIL],
         subject: `[Portal Orbita] Account Deletion Request — ${email}`,
         html: htmlBody,
