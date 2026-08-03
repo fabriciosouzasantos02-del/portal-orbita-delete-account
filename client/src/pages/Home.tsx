@@ -415,10 +415,7 @@ export default function Home() {
                 <p className="text-slate-400 text-sm leading-relaxed max-w-md mx-auto">
                   {t.formSuccessDesc}
                 </p>
-                <div className="mt-6 p-3 rounded-xl bg-white/5 border border-white/10 inline-flex items-center gap-2 text-sm text-slate-400">
-                  <Mail className="w-4 h-4 text-amber-400" />
-                  <span>unterstutzung.service@gmail.com</span>
-                </div>
+
               </motion.div>
             ) : (
               <motion.form
@@ -640,24 +637,7 @@ export default function Home() {
                   )}
                 </motion.button>
 
-                {/* Direct email fallback */}
-                <p className="text-center text-xs text-slate-600">
-                  {locale === "pt"
-                    ? "Ou envie diretamente para"
-                    : locale === "es"
-                    ? "O envíe directamente a"
-                    : locale === "fr"
-                    ? "Ou envoyez directement à"
-                    : locale === "de"
-                    ? "Oder senden Sie direkt an"
-                    : "Or send directly to"}{" "}
-                  <a
-                    href="mailto:unterstutzung.service@gmail.com"
-                    className="text-amber-400 hover:text-amber-300 transition-colors underline underline-offset-2"
-                  >
-                    unterstutzung.service@gmail.com
-                  </a>
-                </p>
+
               </motion.form>
             )}
           </AnimatePresence>
@@ -677,14 +657,7 @@ export default function Home() {
               </span>
             </div>
             <div className="flex flex-wrap items-center justify-center gap-4 text-xs text-slate-600">
-              <a
-                href="mailto:unterstutzung.service@gmail.com"
-                className="hover:text-slate-400 transition-colors flex items-center gap-1"
-              >
-                <Mail className="w-3 h-3" />
-                {t.footerSupport}
-              </a>
-              <span>·</span>
+
               <a
                 href="https://portal-orbita.blogspot.com/2026/08/privacy-policy.html"
                 target="_blank"
